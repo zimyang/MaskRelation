@@ -7,7 +7,11 @@ Masked Relation Learning for DeepFake Detection (Under Review)
 - CUDA 11.3
 
 ### Train
-`python train.py`
+```
+python train.py
+```
 
 ### Test
-`python test.py`
+```
+python test.py
+```
