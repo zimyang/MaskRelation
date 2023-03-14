@@ -98,7 +98,7 @@ def main_worker(gpu, ngpus_per_node, args):
             args.local_rank = args.local_rank * ngpus_per_node + gpu
         dist.init_process_group(backend='nccl', init_method=args.dist_url, world_size=args.world_size, rank=args.local_rank)
 
-    model = define_network(f_dim=128, h_didm=256, a_dim=12, config=config)
+    model = define_network(f_dim=512, h_didm=128, a_dim=12, config=config)
 
     if args.resume:
         if args.local_rank % ngpus_per_node == 0:
