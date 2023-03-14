@@ -21,7 +21,6 @@ from training.evaluate import *
 from utils.util import *
 from config import Config
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--checkpoint', type=str, default='checkpoint/')
 parser.add_argument('--results', type=str, default='results/')
