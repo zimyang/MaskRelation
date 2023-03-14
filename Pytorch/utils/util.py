@@ -2,9 +2,6 @@ from os.path import join
 import torch
 import shutil
 
-import matplotlib
-matplotlib.use('agg')
-
 
 def set_lr(opt, new_lr):
     for param_group in opt.param_groups:
