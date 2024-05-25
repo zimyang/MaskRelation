@@ -1,5 +1,5 @@
 # Mask Relation
-The code of Masked Relation Learning for DeepFake Detection (TIFS 2023)
+The code of [Masked Relation Learning for DeepFake Detection](https://ieeexplore.ieee.org/document/10054130) (TIFS 2023).
 
 We provide Pytorch and MindSpore (昇思) versions of source code.
 
