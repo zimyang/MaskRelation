@@ -30,15 +30,6 @@ class Config:
         self.val_dataset = dict(resize=self.resize, augment='augment_test')
     
     def recipe(self, name):
-        if 'ff' in name:
-            if 'ff-5' in name:
-                self.num_classes=5
-            self.augment='augment0'
-        if 'celeb' in name:
-            self.augment='augment0'
-        if 'dfdc' in name:
-            self.augment='augment0'
-        
         if 'r3d' in name:
             self.batch_size=30
         if 'resnet' in name:
@@ -50,4 +41,10 @@ class Config:
             self.batch_size=64
         if 'no-aug' in name:
             self.augment='augment_test'
-    
+        
+        if 'ff' in name:
+            self.augment='augment0'
+        if 'celeb' in name:
+            self.augment='augment0'
+        if 'dfdc' in name:
+            self.augment='augment0'
